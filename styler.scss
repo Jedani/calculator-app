@@ -59,9 +59,26 @@ body {
 
 .calculator {
 	background-color: sandybrown;
-	border: 3px solid black;
 	height: 90vh;
 	margin: 0 10%;
+
+	.calcdiv {
+		border: 2px solid red;
+		height: 95%;
+		margin: 20px 27%;
+	}
+
+	.themeswitcher {
+		border: 2px solid black;
+		margin-top: 50px;
+		height: 30px;
+	}
+
+	.screen {
+		border: 2px solid blue;
+		margin-top: 20px;
+		height: 70px;
+	}
 }
 
 .container {
