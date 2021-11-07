@@ -1,9 +1,18 @@
 body {
   margin: 0;
+  text-align: center;
+  background-color: rosybrown;
+}
+
+.calculator {
+  background-color: sandybrown;
+  border: 3px solid black;
+  height: 90vh;
+  margin: 0 10%;
 }
 
 .container {
-  height: 100vh;
+  height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,6 +22,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: slategray;
 }
 
 .container ul {
@@ -22,6 +32,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  right: 5%;
 }
 
 .container ul li {
@@ -30,8 +41,8 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 50px;
-  -webkit-transform: rotate(-40deg) skew(25deg);
-          transform: rotate(-40deg) skew(25deg);
+  -webkit-transform: rotate(-35deg) skew(25deg);
+          transform: rotate(-35deg) skew(25deg);
 }
 
 .container ul li span {
@@ -40,7 +51,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,5 +94,25 @@ body {
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 0.2;
+}
+
+.container ul li:nth-child(1) span {
+  background-color: #3b5998;
+}
+
+.container ul li:nth-child(2) span {
+  background-color: #00acee;
+}
+
+.container ul li:nth-child(3) span {
+  background-color: #8a3ab9;
+}
+
+.container ul li:nth-child(4) span {
+  background-color: #0077b5;
+}
+
+.container ul li:nth-child(5) span {
+  background-color: #db4a39;
 }
 /*# sourceMappingURL=styler.css.map */
