@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../calculator-app-main/styler.scss"
+        "../styler.scss"
     ],
     "names": [],
     "file": "styler.css"
