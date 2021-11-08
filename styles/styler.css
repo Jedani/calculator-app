@@ -1,12 +1,12 @@
 body {
   margin: 0;
   text-align: center;
-  background-color: rosybrown;
+  background-color: #4f7ace;
   font-size: 2em;
 }
 
 .calculator {
-  background-color: sandybrown;
+  background-color: #4f7ace;
   height: 90vh;
   margin: 0 20%;
   color: whitesmoke;
@@ -38,6 +38,7 @@ body {
 
 .calculator .calcdiv .screen {
   border: 2px solid blue;
+  border-style: none;
   height: 90px;
   width: 100%;
   margin-top: 110px;
@@ -61,34 +62,71 @@ body {
 
 .calculator .calcdiv .buttons {
   border: 2px solid yellow;
+  border-style: none;
   margin-top: 15px;
   height: 60%;
   position: relative;
 }
 
-.calculator .calcdiv .buttons .sidebuttons {
-  border: 2px solid black;
-  position: absolute;
-  right: 18px;
-  width: 80px;
-  height: 80%;
-  display: block;
-}
-
-.calculator .calcdiv .buttons .sidebuttons button {
+.calculator .calcdiv .buttons button {
   width: 80px;
   margin-top: 20px;
   height: 45px;
   border-radius: 5px;
+  font-size: 1em;
+}
+
+.calculator .calcdiv .buttons .mainButtons {
+  border: 1px solid green;
+  border-style: none;
+  width: 70%;
+  height: 80%;
+  position: relative;
+  left: 20px;
+}
+
+.calculator .calcdiv .buttons .mainButtons button {
+  margin: -100% 8px;
+  width: 80px;
+  margin-top: 20px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.calculator .calcdiv .buttons .sidebuttons {
+  border: 1px solid black;
+  position: absolute;
+  border-style: none;
+  top: 0;
+  right: 18px;
+  width: 80px;
+  height: 82%;
+  display: block;
+}
+
+.calculator .calcdiv .buttons .sidebuttons .rightside {
+  width: 80px;
+  margin-top: 20px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
 .calculator .calcdiv .buttons .bottomButtons {
   position: absolute;
   width: 90%;
   height: 16%;
-  bottom: 10px;
+  bottom: 0;
   border: 2px solid red;
   margin: 0 5%;
+  border-style: none;
+}
+
+.calculator .calcdiv .buttons .bottomButtons .bottoms {
+  width: 190px;
+  position: relative;
+  margin: 5px 0px;
 }
 
 .container {
