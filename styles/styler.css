@@ -2,30 +2,93 @@ body {
   margin: 0;
   text-align: center;
   background-color: rosybrown;
+  font-size: 2em;
 }
 
 .calculator {
   background-color: sandybrown;
   height: 90vh;
-  margin: 0 10%;
+  margin: 0 20%;
+  color: whitesmoke;
+  display: block;
 }
 
 .calculator .calcdiv {
-  border: 2px solid red;
   height: 95%;
-  margin: 20px 27%;
+  position: relative;
+  margin: 0 20%;
+  border: 2px dotted;
 }
 
-.calculator .themeswitcher {
-  border: 2px solid black;
+.calculator .calcdiv .themeswitcher {
+  height: 50px;
+  width: 100%;
   margin-top: 50px;
-  height: 30px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.calculator .screen {
+.calculator .calcdiv .screen {
   border: 2px solid blue;
+  height: 90px;
+  width: 100%;
+  margin-top: 110px;
+  background-color: #243558;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.calculator .calcdiv .screen p {
+  position: relative;
+  right: 5%;
+  font-size: 2em;
+}
+
+.calculator .calcdiv .buttons {
+  border: 2px solid yellow;
+  margin-top: 15px;
+  height: 60%;
+  position: relative;
+}
+
+.calculator .calcdiv .buttons .sidebuttons {
+  border: 2px solid black;
+  position: absolute;
+  right: 18px;
+  width: 80px;
+  height: 80%;
+  display: block;
+}
+
+.calculator .calcdiv .buttons .sidebuttons button {
+  width: 80px;
   margin-top: 20px;
-  height: 70px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.calculator .calcdiv .buttons .bottomButtons {
+  position: absolute;
+  width: 90%;
+  height: 16%;
+  bottom: 10px;
+  border: 2px solid red;
+  margin: 0 5%;
 }
 
 .container {
