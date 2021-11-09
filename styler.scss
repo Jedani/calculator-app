@@ -4,14 +4,18 @@ $twitter: #00acee;
 $googlePlus: #db4a39;
 $linkedIn: #0077b5;
 $insta: #8a3ab9;
-$screenColor: #243558;
-$backgroundColor: #4f7ace;
+$screenColor: #151e31;
+$backgroundColor: #24375a;
+$backgroundnumColor: #1d2636;
+$delreset: #2e5194;
 
 body {
 	margin: 0;
 	text-align: center;
 	background-color: $backgroundColor;
 	font-size: 2em;
+	height: 100vh;
+	width: 100vw;
 }
 @mixin aligner {
 	display: flex;
@@ -61,103 +65,96 @@ body {
 }
 
 @mixin buttons {
-	width: 80px;
+	width: 5em;
 	margin-top: 20px;
-	height: 45px;
-	border-radius: 5px;
-	font-size: 1em;
+	height: 3em;
+	border-radius: 10px;
+	font-size: 0.6em;
+	border-style: double;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .calculator {
 	background-color: $backgroundColor;
-	height: 90vh;
-	margin: 0 20%;
+	position: relative;
+	margin: 0 auto;
+	width: auto;
 	color: $iconColor;
-	display: block;
+	border: 2px dotted;
 
 	.calcdiv {
 		height: 95%;
-		position: relative;
-		margin: 0 20%;
-		border: 2px dotted;
+		width: 35vw;
+		margin: 0 auto;
 
 		.themeswitcher {
 			height: 50px;
 			width: 100%;
-			margin-top: 50px;
-			position: absolute;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
+			top: 50px;
 		}
 
 		.screen {
-			border: 2px solid blue;
-			border-style: none;
 			height: 90px;
 			width: 100%;
 			margin-top: 110px;
-			background-color: #243558;
+			background-color: $screenColor;
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+			border-radius: 15px;
 			p {
-				position: relative;
-				right: 5%;
 				font-size: 2em;
 			}
 		}
 
 		.buttons {
-			border: 2px solid yellow;
-			border-style: none;
+			background-color: $backgroundnumColor;
+			border-radius: 20px;
 			margin-top: 15px;
-			height: 60%;
-			position: relative;
+			height: 70%;
+			min-width: 35vw;
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: 3fr 1fr;
 			button {
 				@include buttons;
 			}
 
 			.mainButtons {
-				border: 1px solid green;
-				border-style: none;
-				width: 70%;
-				height: 80%;
-				position: relative;
-				left: 20px;
+				display: grid;
+				grid-template-columns: 0.5fr 0.5fr 0.5fr;
+				grid-template-rows: 0.5fr 0.5fr 0.5fr;
 				button {
-					margin: -100% 8px;
 					@include buttons;
 				}
 			}
 
 			.sidebuttons {
-				border: 1px solid black;
-				position: absolute;
-				border-style: none;
-				top: 0;
-				right: 18px;
-				width: 80px;
-				height: 82%;
-				display: block;
-				.rightside {
-					@include buttons;
+				#delete {
+					background-color: $delreset;
+					color: whitesmoke;
 				}
 			}
 
 			.bottomButtons {
-				position: absolute;
-				width: 90%;
-				height: 16%;
-				bottom: 0;
-				border: 2px solid red;
+				display: inline-flex;
+
 				margin: 0 5%;
 				border-style: none;
 
-				.bottoms {
-					width: 190px;
-					position: relative;
-					margin: 5px 0px;
+				.number {
+					width: 10em;
+					padding: 0 auto;
+				}
+				#rest {
+					background-color: $delreset;
+					color: whitesmoke;
+				}
+				#equals {
+					background-color: rgb(214, 33, 33);
+					color: whitesmoke;
 				}
 			}
 		}
@@ -203,4 +200,8 @@ body {
 		}
 		@include colors;
 	}
+}
+
+#name {
+	color: whitesmoke;
 }
