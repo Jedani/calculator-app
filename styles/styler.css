@@ -102,7 +102,7 @@ body {
 }
 
 .calculator .buttons .sidebuttons #delete {
-  background-color: #2e5194;
+  background-color: #4169b4;
   color: whitesmoke;
   font-size: 0.6em;
 }
@@ -119,14 +119,15 @@ body {
 }
 
 .calculator .buttons .bottomButtons #rest {
-  background-color: #2e5194;
+  background-color: #4169b4;
   color: whitesmoke;
   font-size: 0.6em;
 }
 
 .calculator .buttons .bottomButtons #equals {
-  background-color: #d62121;
+  background-color: #af2929;
   color: whitesmoke;
+  font-size: 0.6em;
 }
 
 .container {

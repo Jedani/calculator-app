@@ -6,7 +6,9 @@ buttons.map((button) => {
 	button.addEventListener("click", (e) => {
 		switch (e.target.innerText) {
 			case "RESET":
-				if (display.innerText) display.innerText = "";
+				if (display.innerText) {
+					display.innerText = "";
+				}
 				break;
 			case "DEL":
 				if (display.innerText)
@@ -14,8 +16,13 @@ buttons.map((button) => {
 				break;
 			case "=":
 				display.innerText = eval(display.innerText);
+				if (display.innerText == "undefined") {
+					display.innerText = "";
+				}
 				break;
-
+			case "":
+				display.innerText = "";
+				break;
 			default:
 				display.innerText += e.target.innerText;
 		}
