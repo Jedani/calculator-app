@@ -30,13 +30,67 @@ body {
 }
 
 .calculator .themeswitcher .changer {
-  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
   height: 73%;
+}
+
+.calculator .themeswitcher .changer p {
+  font-size: 11px;
+}
+
+.calculator .themeswitcher .changer .theme {
+  padding-right: 17px;
 }
 
 .calculator .themeswitcher p {
   font-size: 25px;
   padding-left: 10px;
+}
+
+.calculator .themeswitcher .containingDiv {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.calculator .themeswitcher .containingDiv .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -6px;
+}
+
+.calculator .themeswitcher .containingDiv .numbers span {
+  font-size: 14px;
+}
+
+.calculator .themeswitcher .containingDiv .numbers #left {
+  margin-left: 10px;
+}
+
+.calculator .themeswitcher .containingDiv .checkButtons {
+  background-color: #1d2636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  width: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -6px;
+  border-radius: 20px;
+}
+
+.calculator .themeswitcher .containingDiv .checkButtons .checker {
+  margin: 2px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .calculator .screen {
@@ -85,6 +139,9 @@ body {
 
 .calculator .buttons button:hover {
   cursor: pointer;
+  background-color: #00acee;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .calculator .buttons .mainButtons {

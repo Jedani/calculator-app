@@ -73,6 +73,8 @@ body {
 
 	&:hover {
 		cursor: pointer;
+		background-color: #00acee;
+		transition: all 1s ease-in-out;
 	}
 }
 
@@ -91,13 +93,53 @@ body {
 		justify-content: space-between;
 
 		.changer {
-			width: 22%;
+			display: flex;
+			width: 30%;
 			height: 73%;
+			p {
+				font-size: 11px;
+			}
+			.theme {
+				padding-right: 17px;
+			}
 		}
 
 		p {
 			font-size: 25px;
 			padding-left: 10px;
+		}
+
+		.containingDiv {
+			display: inline-grid;
+
+			.numbers {
+				display: flex;
+				margin-top: -6px;
+
+				span {
+					font-size: 14px;
+				}
+				#left {
+					margin-left: 10px;
+				}
+			}
+
+			.checkButtons {
+				background-color: $backgroundnumColor;
+				display: flex;
+				height: 20px;
+				width: 56px;
+				align-items: center;
+				justify-content: center;
+				margin-left: -6px;
+				border-radius: 20px;
+
+				.checker {
+					margin: 2px;
+					padding: 0;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 
