@@ -50,10 +50,11 @@
 	height: 45px;
 	width: 75px;
 	margin-top: 8px;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin: 6px;
 	color: var(--textColor);
 	background-color: var(--bg);
+	font-family: "Rubik", sans-serif;
 
 	&:hover {
 		cursor: pointer;
@@ -119,6 +120,7 @@ body {
 	--delreset: #4169b4;
 	--equals: rgb(160, 45, 45);
 	--textColor: black;
+	--screentext: var(--textColor);
 	--transition: rgb(196, 186, 202);
 }
 .calculator {
