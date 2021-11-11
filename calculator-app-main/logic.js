@@ -29,18 +29,29 @@ buttons.map((button) => {
 	});
 });
 
-let theme1 = document.getElementById("one");
-let theme2 = document.getElementById("two");
-let theme3 = document.getElementById("three");
+let themeOne = document.getElementById("one");
+let themeTwo = document.getElementById("two");
+let themeThree = document.getElementById("three");
 let body = document.body;
 
-function themePicker() {
-	let themes = Array.from(document.getElementsByName("on"));
-	themes.map((theme) => {
-		if (theme.checked == true) {
-			if (theme.value == "theme2") {
-				console.log(theme);
-			}
-		}
-	});
-}
+themeOne.onclick = () => {
+	if (body.classList == "themeTwo") {
+		body.classList.replace("themeTwo", "themeOne");
+	} else if (body.classList == "themeThree") {
+		body.classList.replace("themeThree", "themeOne");
+	}
+};
+themeTwo.onclick = () => {
+	if (body.classList == "themeOne") {
+		body.classList.replace("themeOne", "themeTwo");
+	} else if (body.classList == "themeThree") {
+		body.classList.replace("themeThree", "themeTwo");
+	}
+};
+themeThree.onclick = () => {
+	if (body.classList == "themeOne") {
+		body.classList.replace("themeOne", "themeThree");
+	} else if (body.classList == "themeTwo") {
+		body.classList.replace("themeTwo", "themeThree");
+	}
+};

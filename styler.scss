@@ -62,14 +62,15 @@
 	}
 }
 
-@mixin body {
+body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	font-size: 2em;
 	height: 100vh;
 	width: 100vw;
-	background-color: var(--bg);
+	background-color: var(--backgroundColor);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 :root {
@@ -87,7 +88,6 @@
 	--textColor: whitesmoke;
 }
 .themeTwo {
-	@include body;
 	--bg: rgb(221, 221, 221);
 	--backgroundColor: var(--bg);
 	--screenColor: rgb(245, 238, 238);
@@ -99,7 +99,6 @@
 }
 
 .themeThree {
-	@include body;
 	--bg: rgb(34, 12, 53);
 	--backgroundColor: var(--bg);
 	--screenColor: rgb(44, 26, 58);
@@ -112,8 +111,13 @@
 }
 
 .themeOne {
-	@include body;
-	background-color: var(--backgroundColor);
+	--themeColor: rgb(167, 39, 39);
+	--screenColor: #151e31;
+	--backgroundColor: #24375a;
+	--backgroundnumColor: #151e31;
+	--delreset: #4169b4;
+	--equals: rgb(160, 45, 45);
+	--textColor: whitesmoke;
 }
 .calculator {
 	background-color: var(--backgroundColor);
@@ -224,7 +228,6 @@
 			"bottoms bottoms";
 		border-radius: 20px;
 		height: fit-content;
-		grid-gap: 0px;
 
 		button {
 			@include buttons;
