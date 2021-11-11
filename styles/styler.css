@@ -31,6 +31,25 @@
   --themeColor: rgb(167, 39, 39);
 }
 
+.themeThree {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2em;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg);
+  --bg: rgb(34, 12, 53);
+  --backgroundColor: var(--bg);
+  --screenColor: rgb(44, 26, 58);
+  --delreset: rgb(158, 54, 214);
+  --backgroundnumColor: rgb(44, 26, 58);
+  --equals: #09b9ff;
+  --textColor: gold;
+  --themeColor: #09b9ff;
+  --transition: rgb(97, 21, 138);
+}
+
 .themeOne {
   margin: 0;
   padding: 0;
@@ -191,11 +210,13 @@
   margin-top: 8px;
   font-size: 1em;
   margin: 6px;
+  color: var(--textColor);
+  background-color: var(--bg);
 }
 
 .calculator .buttons button:hover {
   cursor: pointer;
-  background-color: #00acee;
+  background-color: var(--transition);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -217,7 +238,7 @@
 .calculator .buttons .sidebuttons #delete {
   background-color: var(--delreset);
   color: var(--iconColor);
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
 
 .calculator .buttons .bottomButtons {
@@ -234,7 +255,7 @@
 .calculator .buttons .bottomButtons #rest {
   background-color: var(--delreset);
   color: var(--iconColor);
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
 
 .calculator .buttons .bottomButtons #equals {

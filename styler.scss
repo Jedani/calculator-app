@@ -52,10 +52,12 @@
 	margin-top: 8px;
 	font-size: 1em;
 	margin: 6px;
+	color: var(--textColor);
+	background-color: var(--bg);
 
 	&:hover {
 		cursor: pointer;
-		background-color: #00acee;
+		background-color: var(--transition);
 		transition: all 1s ease-in-out;
 	}
 }
@@ -96,7 +98,17 @@
 	--themeColor: rgb(167, 39, 39);
 }
 
-#themeThree {
+.themeThree {
+	@include body;
+	--bg: rgb(34, 12, 53);
+	--backgroundColor: var(--bg);
+	--screenColor: rgb(44, 26, 58);
+	--delreset: rgb(158, 54, 214);
+	--backgroundnumColor: rgb(44, 26, 58);
+	--equals: #09b9ff;
+	--textColor: gold;
+	--themeColor: #09b9ff;
+	--transition: rgb(97, 21, 138);
 }
 
 .themeOne {
@@ -230,7 +242,7 @@
 			#delete {
 				background-color: var(--delreset);
 				color: var(--iconColor);
-				font-size: 0.6em;
+				font-size: 0.4em;
 			}
 		}
 
@@ -243,7 +255,7 @@
 			#rest {
 				background-color: var(--delreset);
 				color: var(--iconColor);
-				font-size: 0.6em;
+				font-size: 0.4em;
 			}
 			#equals {
 				background-color: var(--equals);
