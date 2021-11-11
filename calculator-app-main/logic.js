@@ -28,3 +28,12 @@ buttons.map((button) => {
 		}
 	});
 });
+
+function themePicker() {
+	let themes = Array.from(document.getElementsByName("on"));
+	themes.map((theme) => {
+		if (theme.checked == true) {
+			console.log(theme.value);
+		}
+	});
+}

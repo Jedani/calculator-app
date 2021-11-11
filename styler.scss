@@ -134,6 +134,25 @@ body {
 				margin-left: -6px;
 				border-radius: 20px;
 
+				input[type="radio"] {
+					visibility: hidden;
+				}
+
+				input[type="radio"]::before {
+					border: 1px solid $backgroundnumColor;
+					width: 12px;
+					height: 11px;
+					border-radius: 50%;
+					display: block;
+					content: " ";
+					cursor: pointer;
+					visibility: visible;
+				}
+
+				input[type="radio"]:checked::before {
+					background: radial-gradient(rgb(150, 27, 27) 100%, transparent 38%);
+				}
+
 				.checker {
 					margin: 2px;
 					padding: 0;

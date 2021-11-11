@@ -87,6 +87,25 @@ body {
   border-radius: 20px;
 }
 
+.calculator .themeswitcher .containingDiv .checkButtons input[type="radio"] {
+  visibility: hidden;
+}
+
+.calculator .themeswitcher .containingDiv .checkButtons input[type="radio"]::before {
+  border: 1px solid #1d2636;
+  width: 12px;
+  height: 11px;
+  border-radius: 50%;
+  display: block;
+  content: " ";
+  cursor: pointer;
+  visibility: visible;
+}
+
+.calculator .themeswitcher .containingDiv .checkButtons input[type="radio"]:checked::before {
+  background: radial-gradient(#961b1b 100%, transparent 38%);
+}
+
 .calculator .themeswitcher .containingDiv .checkButtons .checker {
   margin: 2px;
   padding: 0;
