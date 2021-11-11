@@ -49,13 +49,15 @@ body {
 }
 
 .themeOne {
+  --bg: whitesmoke;
   --themeColor: rgb(167, 39, 39);
   --screenColor: #151e31;
   --backgroundColor: #24375a;
   --backgroundnumColor: #151e31;
   --delreset: #4169b4;
   --equals: rgb(160, 45, 45);
-  --textColor: whitesmoke;
+  --textColor: black;
+  --transition: rgb(196, 186, 202);
 }
 
 .calculator {
