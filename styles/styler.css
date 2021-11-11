@@ -1,17 +1,52 @@
-body {
+:root {
+  --iconColor: whitesmoke;
+  --facebook: #3b5998;
+  --twitter: #00acee;
+  --googlePlus: #db4a39;
+  --linkedIn: #0077b5;
+  --instagram: #8a3ab9;
+  --screenColor: #151e31;
+  --backgroundColor: #24375a;
+  --backgroundnumColor: #151e31;
+  --delreset: #4169b4;
+  --equals: rgb(160, 45, 45);
+  --textColor: whitesmoke;
+}
+
+.themeTwo {
   margin: 0;
+  padding: 0;
   text-align: center;
-  background-color: #24375a;
   font-size: 2em;
   height: 100vh;
   width: 100vw;
+  background-color: var(--bg);
+  --bg: rgb(221, 221, 221);
+  --backgroundColor: var(--bg);
+  --screenColor: rgb(245, 238, 238);
+  --delreset: #4169b4;
+  --backgroundnumColor: rgba(202, 191, 191, 0.842);
+  --equals: rgb(204, 100, 14);
+  --textColor: black;
+  --themeColor: rgb(167, 39, 39);
+}
+
+.themeOne {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2em;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg);
+  background-color: var(--backgroundColor);
 }
 
 .calculator {
-  background-color: #24375a;
+  background-color: var(--backgroundColor);
   margin: 0 auto;
-  width: 390px;
-  color: whitesmoke;
+  width: 420px;
+  color: var(--textColor);
   height: 530px;
   position: relative;
 }
@@ -71,7 +106,7 @@ body {
 }
 
 .calculator .themeswitcher .containingDiv .checkButtons {
-  background-color: #1d2636;
+  background-color: var(--backgroundnumColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +127,7 @@ body {
 }
 
 .calculator .themeswitcher .containingDiv .checkButtons input[type="radio"]::before {
-  border: 1px solid #1d2636;
+  border: 1px solid var(--backgroundnumColor);
   width: 12px;
   height: 11px;
   border-radius: 50%;
@@ -103,7 +138,7 @@ body {
 }
 
 .calculator .themeswitcher .containingDiv .checkButtons input[type="radio"]:checked::before {
-  background: radial-gradient(#961b1b 100%, transparent 38%);
+  background-color: var(--themeColor);
 }
 
 .calculator .themeswitcher .containingDiv .checkButtons .checker {
@@ -116,7 +151,7 @@ body {
   margin-top: 21px;
   height: 90px;
   width: 100%;
-  background-color: #151e31;
+  background-color: var(--screenColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +169,7 @@ body {
 }
 
 .calculator .buttons {
-  background-color: #1d2636;
+  background-color: var(--backgroundnumColor);
   margin-top: 28px;
   display: -ms-grid;
   display: grid;
@@ -146,14 +181,16 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  grid-gap: 0px;
 }
 
 .calculator .buttons button {
   border-radius: 10px;
-  height: 48px;
-  width: 84px;
-  margin-top: 10px;
+  height: 45px;
+  width: 75px;
+  margin-top: 8px;
   font-size: 1em;
+  margin: 6px;
 }
 
 .calculator .buttons button:hover {
@@ -178,8 +215,8 @@ body {
 }
 
 .calculator .buttons .sidebuttons #delete {
-  background-color: #4169b4;
-  color: whitesmoke;
+  background-color: var(--delreset);
+  color: var(--iconColor);
   font-size: 0.6em;
 }
 
@@ -191,18 +228,18 @@ body {
 }
 
 .calculator .buttons .bottomButtons .number {
-  width: 46%;
+  width: 40%;
 }
 
 .calculator .buttons .bottomButtons #rest {
-  background-color: #4169b4;
-  color: whitesmoke;
+  background-color: var(--delreset);
+  color: var(--iconColor);
   font-size: 0.6em;
 }
 
 .calculator .buttons .bottomButtons #equals {
-  background-color: #af2929;
-  color: whitesmoke;
+  background-color: var(--equals);
+  color: var(--iconColor);
   font-size: 0.6em;
 }
 
@@ -255,7 +292,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: whitesmoke;
+  color: var(--iconColor);
   font-size: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -292,26 +329,26 @@ body {
 }
 
 .container ul li:nth-child(1) span {
-  background-color: #3b5998;
+  background-color: var(--facebook);
 }
 
 .container ul li:nth-child(2) span {
-  background-color: #00acee;
+  background-color: var(--twitter);
 }
 
 .container ul li:nth-child(3) span {
-  background-color: #8a3ab9;
+  background-color: var(--instagram);
 }
 
 .container ul li:nth-child(4) span {
-  background-color: #0077b5;
+  background-color: var(--linkedIn);
 }
 
 .container ul li:nth-child(5) span {
-  background-color: #db4a39;
+  background-color: var(--googlePlus);
 }
 
 #name {
-  color: whitesmoke;
+  color: var(--textColor);
 }
 /*# sourceMappingURL=styler.css.map */

@@ -29,11 +29,18 @@ buttons.map((button) => {
 	});
 });
 
+let theme1 = document.getElementById("one");
+let theme2 = document.getElementById("two");
+let theme3 = document.getElementById("three");
+let body = document.body;
+
 function themePicker() {
 	let themes = Array.from(document.getElementsByName("on"));
 	themes.map((theme) => {
 		if (theme.checked == true) {
-			console.log(theme.value);
+			if (theme.value == "theme2") {
+				console.log(theme);
+			}
 		}
 	});
 }
