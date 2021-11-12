@@ -137,10 +137,14 @@ body {
 	color: var(--textColor);
 	height: 530px;
 	position: relative;
+	font-weight: 600;
 	@media (max-width: 440px) {
 		margin: 0 auto;
 		width: 350px;
 		height: 530px;
+		.themeswitcher {
+			width: 94%;
+		}
 	}
 
 	.themeswitcher {

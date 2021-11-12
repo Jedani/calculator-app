@@ -78,6 +78,7 @@ body {
   color: var(--textColor);
   height: 530px;
   position: relative;
+  font-weight: 600;
 }
 
 @media (max-width: 440px) {
@@ -85,6 +86,9 @@ body {
     margin: 0 auto;
     width: 350px;
     height: 530px;
+  }
+  .calculator .themeswitcher {
+    width: 94%;
   }
 }
 
