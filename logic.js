@@ -19,6 +19,7 @@ buttons.map((button) => {
 				if (display.innerText == "undefined") {
 					display.innerText = "";
 				}
+
 				break;
 			case "":
 				display.innerText = "";

@@ -127,7 +127,7 @@ body {
 	--delreset: #4169b4;
 	--equals: rgb(160, 45, 45);
 	--textColor: black;
-	--screentext: var(--textColor);
+	--screentext: var(--bg);
 	--transition: rgb(196, 186, 202);
 }
 .calculator {
@@ -222,11 +222,11 @@ body {
 	.screen {
 		margin-top: 21px;
 		height: 90px;
-		background-color: var(--screenColor);
+		background-color: var(--backgroundnumColor);
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		color: var(--bg);
+		color: var(--screentext);
 		border-radius: 15px;
 		overflow-x: auto;
 		overflow-y: hidden;
