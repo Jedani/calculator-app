@@ -10,6 +10,16 @@ body {
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
+@media (max-width: 440px) {
+  body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
 :root {
   --iconColor: whitesmoke;
   --facebook: #3b5998;
@@ -68,6 +78,14 @@ body {
   color: var(--textColor);
   height: 530px;
   position: relative;
+}
+
+@media (max-width: 440px) {
+  .calculator {
+    margin: 0 auto;
+    width: 350px;
+    height: 530px;
+  }
 }
 
 .calculator .themeswitcher {
@@ -202,6 +220,28 @@ body {
   height: fit-content;
 }
 
+@media (max-width: 440px) {
+  .calculator .buttons {
+    height: 326px;
+    margin-top: 21px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .calculator .buttons .mainButtons .number {
+    width: 71px;
+  }
+  .calculator .buttons .bottomButtons {
+    height: 60%;
+  }
+  .calculator .buttons .bottomButtons .number {
+    width: 40%;
+  }
+}
+
 .calculator .buttons button {
   border-radius: 10px;
   height: 45px;
@@ -276,6 +316,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: slategray;
+}
+
+@media (max-width: 440px) {
+  .container {
+    display: none;
+  }
 }
 
 .container ul {

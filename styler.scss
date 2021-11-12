@@ -72,6 +72,13 @@ body {
 	width: 100vw;
 	background-color: var(--backgroundColor);
 	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	@media (max-width: 440px) {
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		font-size: 1.5em;
+		text-align: center;
+	}
 }
 
 :root {
@@ -130,6 +137,11 @@ body {
 	color: var(--textColor);
 	height: 530px;
 	position: relative;
+	@media (max-width: 440px) {
+		margin: 0 auto;
+		width: 350px;
+		height: 530px;
+	}
 
 	.themeswitcher {
 		height: 40px;
@@ -222,6 +234,24 @@ body {
 	}
 
 	.buttons {
+		@media (max-width: 440px) {
+			height: 326px;
+			margin-top: 21px;
+			display: grid;
+			flex-direction: row;
+			.mainButtons {
+				.number {
+					width: 71px;
+				}
+			}
+
+			.bottomButtons {
+				height: 60%;
+				.number {
+					width: 40%;
+				}
+			}
+		}
 		background-color: var(--backgroundnumColor);
 		margin-top: 28px;
 		display: grid;
@@ -277,6 +307,9 @@ body {
 	height: 12vh;
 	@include aligner;
 	background: slategray;
+	@media (max-width: 440px) {
+		display: none;
+	}
 
 	ul {
 		position: relative;
