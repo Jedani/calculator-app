@@ -222,14 +222,24 @@ body {
 	.screen {
 		margin-top: 21px;
 		height: 90px;
-		width: 100%;
 		background-color: var(--screenColor);
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		color: var(--bg);
 		border-radius: 15px;
-		p {
-			font-size: 2em;
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		.seen {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 100%;
+
+			p {
+				font-size: 2em;
+			}
 		}
 	}
 

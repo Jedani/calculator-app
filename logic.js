@@ -15,7 +15,7 @@ buttons.map((button) => {
 					display.innerText = display.innerText.slice(0, -1);
 				break;
 			case "=":
-				display.innerText = eval(display.innerText);
+				display.innerText = eval(display.innerText).toFixed(2);
 				if (display.innerText == "undefined") {
 					display.innerText = "";
 				}
