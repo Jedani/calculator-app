@@ -107,11 +107,11 @@ body {
 }
 
 .themeThree {
-	--bg: rgb(34, 12, 53);
+	--bg: rgb(31, 1, 56);
 	--backgroundColor: var(--bg);
 	--screenColor: rgb(44, 26, 58);
 	--delreset: rgb(158, 54, 214);
-	--backgroundnumColor: rgb(44, 26, 58);
+	--backgroundnumColor: rgb(40, 15, 59);
 	--equals: #09b9ff;
 	--textColor: gold;
 	--themeColor: #09b9ff;
@@ -137,6 +137,7 @@ body {
 	color: var(--textColor);
 	height: 530px;
 	position: relative;
+	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	@media (max-width: 440px) {
 		margin: 0 auto;
@@ -148,6 +149,7 @@ body {
 	}
 
 	.themeswitcher {
+		width: 100%;
 		height: 40px;
 		display: flex;
 		align-items: center;
